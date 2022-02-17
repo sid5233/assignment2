@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'assignment2';
+  username = ""
+  onAddUser(event : Event){
+    this.username = (<HTMLInputElement>event.target).value;
+  }
+  resetUser(){
+    this.username = ""
+  }
+
 }
